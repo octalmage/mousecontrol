@@ -13,8 +13,8 @@ var html = document.querySelector('html');
 
 function mouseMove(mx, my)
 {
-	x=mx;
-	y=my;
+	x = mx;
+	y = my;
 
 	$('#maccursor').css('left', x).css('top', y);
 }
@@ -23,7 +23,7 @@ $(function()
 {
 	$("#testButton").on("click", function(e)
 	{
-		mouseMove(x+100, y+100);
+		mouseMove(x + 100, y + 100);
 	});
 });
 
@@ -50,14 +50,14 @@ html.onclick = function(e)
 	}
 	else
 	{
-		if (click==0)
+		if (click == 0)
 		{
-			click=1;
-			$(document.elementFromPoint(x, y+10)).click();
+			click = 1;
+			$(document.elementFromPoint(x, y + 10)).click();
 			setTimeout(function()
 			{
-				click=0;
-			}, 1000);
+				click = 0;
+			}, 100);
 		}
 	}
 

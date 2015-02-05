@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>mousecontrol</title>
+
+	<style type="text/css">
+	#maccursor 
+	{
+ 		cursor: none;
+ 		width: 20px;
+ 		height: 25px;
+ 		background-size: contain;
+ 		background-image: url("mac-cursor.png");
+ 		background-repeat: no-repeat;
+    	background-position: top left;    
+ 		position: absolute;
+ 		top: 0;
+ 		left: 0;
+ 		z-index: 10000;
+	}
+
+
+	</style>
+
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+</head>
+<body>
+<h2>Mouse control proof of concept.</h2>
+Click the empty page to lock the cursor, then click the button to move the mouse.
+<br><br>
+<button id="testButton">Click</button>
+<div id="maccursor"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
